@@ -11,7 +11,7 @@ function remove(){
 
 function generateQR(){
   if(qrText.value.length > 0){
-    qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example"+ qrText.value;
+    qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+ qrText.value;
   }else{
     box.style.display = 'grid';
     box.style.left = '50%';

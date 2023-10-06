@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Qr Code Generator</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="message">
+    <img src="error.webp" alt="">
+    <h2 style="color: red">ERROR</h2>
+    <p>Plz Write Text In The Input</p>
+    <button onclick="remove()">ok</button>
+  </div>
+  <div align="center" class="container">
+    <ul>
+    <p>Enter Your Text Or URL</p>
+    <input type="text" placeholder="Text Or URL" id="qrText"><br>
+    <button onclick="generateQR()">Generate</button>
+    </ul>
+    
+    <div id="imgBox">
+      <img src="" id="qrImage">
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

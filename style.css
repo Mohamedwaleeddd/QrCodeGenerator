@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+* {
+  font-family: 'REM', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+  box-sizing: border-box;
+  transition: 1s;
+}
+body{
+  display: grid;
+  place-items: center;
+  background: #DEEFFF;
+  height: 100vh;
+}
+input{
+  height: 50px;
+  background: #DEEFFF;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  outline: none;
+  
+}
+::placeholder{
+  color: #555;
+}
+.container p{
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+button{
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  background: dodgerblue;
+  border: none;
+  height: 40px;
+  margin-top: 10px;
+  width: 300px;
+}
+#qrImage{
+  border-radius: 5px;
+  margin: 10px;
+}
+.container{
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.message{
+  position: absolute;
+  left: 50%;
+  place-items: center;
+  top: 50%;
+  border-radius: 5px;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+  border: 1px lightgrey solid;
+  background: #FFFFFF73;
+  color: #333;
+  height: 230px;
+  width: 350px;
+  animation: 1s box normal;
+  transform: translate(-50%, -50%);
+}
+.message img{
+  width: 100px;
+}
+.message button{
+  width: 100px;
+  height: 30px;
+  margin-top: 0;
+}
+@keyframes box{
+  0%{
+    top: -100%;
+  }
+  0%{
+    left: -100%;
+  }
+}
